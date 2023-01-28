@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light-color :#B6EADA ;
+    --dark-color:#301E67;
+    --secondary:#5B8FB9;
+    --black : #03001C;
+    --bg-color: #DDDDDD;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+}
+.main-container{
+    width: 100rem;
+   margin: 0 auto;
+}
+
+
+/* navigation bar  */
+.nav-con{
+    display: flex;
+    justify-content: space-between; 
+    max-width: 100rem;
+    margin: 0 auto;
+    align-items: center;
+    height: 6rem;
+}
+.logo h2 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    transition: 0.5s ease-in-out;
+}
+.logo h2:hover{
+    color: var(--light-color);
+    transition: 0.5s ease-in-out;
+}
+.navigation{
+    background-color: var(--secondary);
+}
+.list ul{
+    display: flex;
+    gap: 2rem;
+}
+.list ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    border-bottom: 0.3rem solid transparent;
+    transition: 0.5s ease-in-out;
+}
+.list ul li:hover{
+    border-bottom: 0.3rem solid var(--light-color);
+    transition: 0.5s ease-in-out;
+}
+.primary-btn{
+    border: none;
+    padding: 0.6rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.primary-btn:hover{
+background-color: var(--dark-color);
+color: var(--light-color);
+transition: 0.3s ease-in-out;
+}
+
+
+/* hero section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text h3{
+    font-size: 4rem;
+    color: rgb(211, 82, 82);
+    line-height: 70px;
+}
+.text p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.btns{
+    background-color: var(--secondary);
+    max-width: 20rem;
+    height: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.secondary-btn{
+    border: none;
+    padding: 0.6rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.secondary-btn:hover{
+background-color: var(--light-color);
+color: var(--dark-color);
+transition: 0.3s ease-in-out;
+}
